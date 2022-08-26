@@ -76,7 +76,7 @@ function newElement() {
     let inputValue = document.getElementById("task").value;                         
     let text = document.createTextNode(inputValue);                          
     newLi.appendChild(text);                                                
-    if (inputValue != "" && inputValue.trim(" ").length != 0) { 
+    if (inputValue != "" && inputValue.trim().length != 0) { 
       $(".success").toast("show");                                               
         allList.appendChild(newLi);  
         let span = document.createElement("span");                                      
@@ -105,7 +105,7 @@ function newElement() {
     }
     // Yeni eklene item'ı localstorage'a ekleme 
     const todos = JSON.parse(localStorage.getItem("todos"));                       
-    if(todo.text.length != 0){
+    if(todo.text.trim().length > 0){
       todos.push(todo); 
     }
                                                                  
