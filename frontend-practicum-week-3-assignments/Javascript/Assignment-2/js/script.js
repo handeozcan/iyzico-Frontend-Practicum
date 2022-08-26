@@ -71,7 +71,7 @@ for (let i = 0; i < close.length; i++) {
 }
 
 // Yeni element ekleme 
-function yeniElement() {
+function newElement() {
     let newLi = document.createElement("li");                                   
     let inputValue = document.getElementById("task").value;                         
     let text = document.createTextNode(inputValue);                          
