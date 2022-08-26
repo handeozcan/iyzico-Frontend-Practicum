@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="#">
     <title>Yemek Tarifleri</title>
-
 </head>
-<body>        
-        <div class="relative">   <!-- Birbirine göre konumlandırılabilmesi için relative, absolute yapısı kullandım.-->
+<body>
+        <div class="main_image">   <!-- Birbirine göre konumlandırılabilmesi için relative, absolute yapısı kullandım.-->
             <img src="images/black.jpg" alt="restorant-icon" style="height: 300px;" width="100%">
-            <div class="absolute" >
+            <div class="main_text" >
                 <h2>MUTFAĞIMA HOŞ GELDİNİZ..</h2>
             </div>
         </div>
-
-            
-        <div class="MainDiv" >
-               
-            <h2 style="margin-bottom: 30px;">Profiterol Tarifi</h2>
-            <i class="fa-solid fa-utensils icon"> 8-10 kisilik </i> <!--Fontawesome yardımı ile icon elementi eklendi.-->
-            <i class="fa-solid fa-clock icon"> 20 dk Hazirlik, 45dk Pisirme </i>
-
+        <div class="section_title" >
+            <h2 style="margin-bottom: 30px; ">Profiterol Tarifi</h2>
+           <div style="display: flex; align-items: center;"> <i class="fa-solid fa-utensils icon"></i> <p style="margin: 0 0 0 10px ;">8-10 kisilik </p> </div> <!--Fontawesome yardımı ile icon elementi eklendi.-->
+            <div style="display: flex; align-items: center;"><i class="fa-solid fa-clock icon"></i> <p style="margin: 0 0 0 10px ;">20 dk Hazirlik, 45dk Pisirme </p></div>
         </div>
-        <div class="Main"> <!-- Malzemeleri ve resmi bulunduran iç içe divlerden oluşan bir yapı kurdum.-->
-            <div class="MainText">
+        <div class="section"> <!-- Malzemeleri ve resmi bulunduran iç içe divlerden oluşan bir yapı kurdum.-->
+            <div class="section_image">
+                <img src="images/pro.PNG" alt="pro" height="300px;" width="400px">
+        </div>
+            <div class="section_text">
                 <div class="text">
                     <h3>Malzemeler:</h3><br>
                     <ul>
@@ -51,13 +49,10 @@
                     <ul>
                         <li>1 paket hazır çikolata sosu ya da benmari usulü eritilmiş 80 gr bitter çikolata</li>
                     </ul>
-                </div>   
-            </div>
-            <div class="Mainİmg">
-                    <img src="images/pro.PNG" alt="pro" height="300px;" width="400px">
+                </div>
             </div>
         </div>
-        <div class="textTwo">
+        <div class="section_twotext">
             <!--Başlık için inline CSS kullandım.-->
             <h3 style="margin-bottom:30px; text-align: center;">Profiterol Tarifi Nasıl Yapılır.</h3>
                 <div>
@@ -76,10 +71,8 @@
                         <li><b>Tatlımızın üzerine çikolata sosu gezdirelim.</b> Tüm profiterolleri doldurduktan sonra üzerine çikolata sosunu ya da benmari usulü erittiğiniz çikolatayı gezdirin.</li>
                     </ol>
                 </div>
-                
         </div>
-
-        <div class="notlar"> 
+        <div class="notes">
             <div>
                 <!--Başlık için inline CSS kullandım.-->
                 <h3 style="margin-bottom:30px; text-align: center;">Profiterol Tarifi <span style="text-decoration: underline;">Püf</span> Noktaları.</h3>
@@ -89,15 +82,12 @@
                         <li>Kremayı doldururken ılık olmalıdır.Çok cıvık olmaması gerekmektedir.</li> <br>
                         <li> Benmari usulü çikolatayı ısıya dayanıklı bir kaba koyarak kabınızı kaynamakta olan suyun içine koyuyorsunuz.
                                 Çikolata su ile temas etmeyecek şekilde. Çikolata sıcak sudan aldığı ısı ile eriyecektir. </li>
-                    </ul> 
-            </div>  
+                    </ul>
+            </div>
         </div>
-
         <footer>
-                Afiyet Olsun..
+            Afiyet Olsun...
         </footer>
-
-    
     <script src="https://kit.fontawesome.com/698a5a45ed.js" crossorigin="anonymous"></script>
 </body>
 </html>
